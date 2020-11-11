@@ -3,12 +3,14 @@
 
 int main()
 {
-   int sec, h, m, s;
-   printf("Input seconds: ");
-   scanf("%d",&sec);
+ int jo;
+printf ("enter a number:")
+;scanf("%d",&jo);
 
-   h = (sec/3600); m = (sec-(3600*h))/60; s = (sec-(3600*h)-(m*60));
+if(jo % 2 == 0)
+    printf("%d is even number.", jo);
+else
+    printf("%d is an odd number.", jo);
+return 0;
 
-   printf(" %d seconds = %d hours: %d minutes: %d seconds", sec, h, m, s);
-    return 0;
 }
