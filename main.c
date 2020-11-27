@@ -3,20 +3,22 @@
 
 int main()
 {
-    int angle1, angle2, angle3, sum;
+    char a;
+    int capital_vowel, dicapital_vowel;
+    printf("Enter a letter from the alphabet: ");
+    scanf("%c", &a);
 
-    printf("Input three angles of a triangle: \n");
-    scanf("%d%d%d", &angle1, &angle2, &angle3);
+    capital_vowel = (a == 'A' || a == 'E' || a == 'I' || a== 'O' || a == 'U');
 
-    sum = angle1 + angle2 + angle3;
+    dicapital_vowel = (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u');
 
-    if(sum == 180 && angle1 > 0 && angle2 > 0 && angle3 > 0)
+    if (capital_vowel || dicapital_vowel)
     {
-        printf("Triangle is valid");
+        printf("%c is a vowel.", a);
     }
     else
     {
-        printf("Triangle is not valid");
+        printf("%c is a consonant.", a);
     }
     return 0;
 }
