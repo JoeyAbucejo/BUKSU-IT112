@@ -1,11 +1,35 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
 
-int main() {
-int i;
-for (i = 6; i <= 10; ++i)
+int main()
 {
-printf("%d: %d\n", i, i * i);
+    int x[3][2];
+    int id, pin;
+    x[0][0]=2001;
+    x[0][1]=1234;
+    x[1][0]=2002;
+    x[1][1]=5678;
+    x[2][0]=2003;
+    x[2][1]=7890;
+
+    printf("ID Number: ");
+    scanf("%d", &id);
+    printf("PIN CODE: ");
+    scanf("%d", &pin);
+
+    if(id==x[0][0], pin==x[0][1])
+    {
+    printf("You're successfully logged in user 2001");
+    }else if(id==x[1][0], pin==x[1][1])
+    {
+    printf("You're successfully logged in user 2002");
+    }else if(id==x[2][0], pin==x[2][1])
+    {
+    printf("You're successfully logged in user 2003");
+    }else
+    {
+    printf("Unidentified User");
+    }
+
+    return 0;
 }
-return 0;
-}
+
