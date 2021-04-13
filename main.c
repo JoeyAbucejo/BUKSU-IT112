@@ -11,6 +11,7 @@ int main()
     x[2][0]=2003;
     x[2][1]=7890;
 
+
     printf("ID Number: ");
     scanf("%d", &id);
     printf("PIN CODE: ");
@@ -32,4 +33,3 @@ int main()
 
     return 0;
 }
-
